@@ -3,13 +3,38 @@
  * Copyright 2013-2017 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-resume/blob/master/LICENSE)
  */
- body{font-family:'Open Sans',serif;padding-top:54px;color:#868e96}@media (min-width:992px){body{padding-top:0;padding-left:17rem}}h1,h2,h3,h4,h5,h6{font-family: "Raleway", sans-serif;font-weight:700;color:#343a40}h1{font-size:6rem;line-height:5.5rem}h2{font-size:3.5rem}.subheading{font-weight:500;font-family: "Raleway", sans-serif;}.list-social-icons a{color:#495057}.list-social-icons a:hover{color:#ff7722}.list-social-icons a .fa-lg{font-size:1.75rem}.list-icons{font-size:3rem}@media (min-width:992px){#sideNav{text-align:center;position:fixed;top:0;left:0;display:flex;flex-direction:column;width:17rem;height:100vh}#sideNav .navbar-brand{display:flex;margin:auto auto 0;padding:.5rem}#sideNav .navbar-brand .img-profile{width:10rem;height:10rem;border:.5rem solid rgba(255,255,255,.2)}#sideNav .navbar-collapse{display:flex;align-items:flex-start;flex-grow:0;width:100%;margin-bottom:auto}#sideNav .navbar-collapse .navbar-nav{flex-direction:column;width:100%}#sideNav .navbar-collapse .navbar-nav .nav-item{display:block}#sideNav .navbar-collapse .navbar-nav .nav-item .nav-link{display:block}}section.resume-section{border-bottom:1px solid #dee2e6;padding-top:5rem!important;padding-bottom:5rem!important}section.resume-section .resume-item .resume-date{min-width:none}@media (min-width:768px){section.resume-section .resume-item .resume-date{min-width:18rem}}@media (min-width:992px){section.resume-section{padding-top:3rem!important;padding-bottom:3rem!important}}.bg-primary{background-color:#040b14 !important}.text-primary{color:#ff7722 !important}a{color:#ff7722}a:active,a:focus,a:hover{color:#824027}
+ body{ font-family: "Roboto", sans-serif; padding-top:54px;color:#272829;}
+ @media (min-width:992px){
+   body{padding-top:56px;}
+}
+h1,h2,h3,h4,h5,h6{ font-family: "Roboto", sans-serif;font-weight:700;color:#343a40}h1{font-size:6rem;line-height:5.5rem}h2{font-size:3.5rem}.subheading{font-weight:500; font-family: "Roboto", sans-serif;}.list-social-icons a{color: #09a98f !important;}.list-social-icons a:hover{color:#ff7722}.list-social-icons a .fa-lg{font-size:1.75rem}.list-icons{font-size:3rem}
+#sideNav {
+   text-align: center;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: auto;
+   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+   background: #fff;
+}
 
- #sideNav .navbar-nav .nav-item .nav-link {
-   font-weight: 400;
-   text-transform: capitalize;
-   text-align: left;
-   font-size: 16px;
+ @media (min-width:992px){
+      /* #sideNav .navbar-brand{display:flex;margin:auto auto 0;padding:.5rem}
+      #sideNav .navbar-brand .img-profile{width:10rem;height:10rem;border:.5rem solid rgba(255,255,255,.2)}
+      #sideNav .navbar-collapse{display:flex;align-items:flex-start;flex-grow:0;width:100%;margin-bottom:auto}
+      #sideNav .navbar-collapse .navbar-nav{flex-direction:column;width:100%}
+      #sideNav .navbar-collapse .navbar-nav .nav-item{display:block}
+      #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link{display:block} */
+   }
+   section.resume-section{padding-top:5rem!important;padding-bottom:5rem!important}section.resume-section .resume-item .resume-date{min-width:none}@media (min-width:768px){section.resume-section .resume-item .resume-date{min-width:18rem}}@media (min-width:992px){section.resume-section{padding-top:3rem!important;padding-bottom:3rem!important}}.bg-primary{background-color:#040b14 !important}.text-primary{color:#ff7722 !important}a{color:#ff7722}a:active,a:focus,a:hover{color:#824027}
+ p {
+   line-height: 30px;
+}
+#sideNav .navbar-nav .nav-item .nav-link {
+   color: #343a40;
+   font-weight: 500;
+   outline: none;
 }
 #sideNav .navbar-nav .nav-item .nav-link:hover i,
 #sideNav .navbar-nav .nav-item .nav-link.active i{
@@ -17,12 +42,17 @@
 }
 
 
-#home{
-   background: url('../img/banner2.jpg') no-repeat;
-   background-position:100% 34%;
-   background-size: cover;
-   min-height:100vh
+#home {
+   background: #0BCEAF !important;
+   min-height: 100vh;
 }
+#home h2{
+   -webkit-text-stroke: 2px #ffffff;
+   text-transform: uppercase;
+   color: #0BCEAF !important;
+   font-size: 100px;
+}
+
 .tech-list {
    display: flex;
    align-items: flex-start;
@@ -89,11 +119,9 @@
 .type-profile {
    color: #fff;
    font-size: 24px;
-   font-weight: 700;
+   font-weight: 400;
 }
-.type-profile span.typed {
-   border-bottom: 2px solid #ff7722;
-}
+
 ul.infolist {
    margin: 0;
    padding: 0;
@@ -106,4 +134,7 @@ ul.infolist li {
    width: 50%;
    margin-bottom: 10px;
    font-size: 14px;
+}
+#experience, #skills {
+   background: #f4fafd;
 }
